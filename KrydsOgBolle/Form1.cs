@@ -31,7 +31,7 @@ namespace KrydsOgBolle
                 board.Add(" ");
                 button.Text = " ";
                 
-                //Bruges som en falsk form for ID, for nemmere kunne tilgåes igennem board array
+                //Bruges her som en form for ID, for nemmere kunne tilgåes igennem board array
                 button.Tag = i;
                 button.TabStop = false;
                 i++;
@@ -110,7 +110,7 @@ namespace KrydsOgBolle
             //Besked til dialog vinduet
             string message = "";
             if (winner)
-                message = $"Player {player} has won!!!\ntry again?";
+                message = $"Player {player} won!!!\ntry again?";
             else
                 message = "No more moves available \ntry again?";
 
